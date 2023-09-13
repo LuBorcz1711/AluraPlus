@@ -1,0 +1,195 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundaria: #C0C0C0;
+    --azul-botao: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #7fa8da;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal); 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Principal {
+    background-image: url("Assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.Container {
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.Container__Botao{
+    background-color: var(--azul-botao);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display:block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.Botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.Container__Aviso{
+    font-size: 12px;
+    color: var(--cinza-secundaria);}
+
+.Container__Titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Container__Imagem{
+    margin: 1em 0 2em 0;
+}
+
+.Container__Caixa{
+    margin: 0 6em;
+}
+
+.Secundario__Imagem{
+    width: 70%;
+}
+
+.Secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.Descricao__Titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.Descricao__Paragrafo{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza-secundaria);
+}
+
+.Secundario__Botao{
+    display: inline-block;
+    margin-top: 1.3em;
+}
+
+.Container__Descricao{
+    padding: 2em;
+}
+
+.Imagem__Estranha{
+    margin:0 6em;
+}
+
+.Dispositivos__Lista{
+    display:flex;
+    justify-content:center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.Dispositivos{
+    text-align: center;
+}
+
+.Dispositivos__Titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.Lista__Item{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.Rodape{
+    text-align: center;
+    font-family: var(--fonte-principal); 
+    font-weight: 400;
+    margin:5em 3em;
+}
+
+
+.Rodape__Lista{
+    display:flex;
+    list-style-type: none;
+    justify-content:center;
+    color: var(--branco-principal);
+    margin-top: 1em;
+}
+
+.Lista__Link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 16px;
+    margin-left: 1em; 
+}
+
+.Rodape__Paragrafo{
+    font-size: 14px;
+    color: var(--cinza-secundaria);
+    margin: 2em;
+}
+
+.Lista__Link a:hover{
+    color: var(--azul-botao);
+}
+
+.Container__Botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-fundo);
+}
+
+@media screen and (max-width:768px){
+    .Container{
+        display: block;
+        background-image: none;
+    }
+    .Container__Imagem{
+        width: 50vw;
+    }
+
+    .Container__Caixa{
+        margin: 2em 2em;
+    }
+
+    .Secundario{
+        margin:1em;
+        text-align: center;
+    }
+
+    .Secundario__Imagem{
+        width: 50vw;
+    }
+
+    .Dispositivos__Lista{
+        display:block;
+    }
+
+    .Rodape__Lista{
+        display:block;
+    }
+}
